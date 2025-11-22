@@ -66,13 +66,13 @@ Report found/lost items
 
 Admin login: password is admin123
 
-File Structure
 lost-and-found/
 │
 ├─ main.py          # Main program
 ├─ found.txt        # Stores reported found items
 ├─ lost.txt         # Stores reported lost items
 └─ README.md        # Project documentation
+
 
 Sample Output
 ========= LOST AND FOUND SYSTEM =========
