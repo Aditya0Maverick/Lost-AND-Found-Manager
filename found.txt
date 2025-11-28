@@ -1,1 +1,3 @@
-81735 | wallet  | black leather wallet  | aditya  | 9140241548 | 2025-11-22 22:18 | unclaimed | None
+81735 | wallet | black leather wallet | aditya | 9140241548 | 2025-11-22 22:18 | unclaimed | None
+74722 | bag | red bag | pankaj | 21324545 | 2025-11-22 22:45 | claimed | priyanshu
+74577 | iphone | blue iphone xr | aditya | 9140241548 | 2025-11-28 22:30 | unclaimed | None

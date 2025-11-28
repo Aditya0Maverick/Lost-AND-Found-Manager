@@ -2,8 +2,6 @@ import random
 from datetime import datetime
 import os
 
-def clear_screen():
-    os.system("cls" if os.name == "nt" else "clear")
 
 def item_id():
     return random.randint(10000, 99999)
@@ -25,6 +23,7 @@ def loadfiles(filename):
         for line in f:
             fields = [x.strip() for x in line.split("|")]
             records.append(fields)
+
 
     return records
 
@@ -134,14 +133,14 @@ def admin_auto_match():
         if L[6] == "resolved":
             continue
 
-        print(f"\nLost: {L[1]} (ID: {L[0]})")
-
         for F in found:
             if F[6] == "claimed":
                 continue
 
-            if L[1].lower() in F[1].lower() or F[1].lower() in L[1].lower():
-                print(f"➡ Possible Match → Found ID: {F[0]} | {F[1]} | {F[2]}")
+            if (L[1].lower() in F[1].lower() or F[1].lower() in L[1].lower()) and \
+                (L[2].lower() in F[2].lower() or F[2].lower() in L[2].lower()):
+
+                print(f" Possible Match → Found ID: {F[0]} | {F[1]} | {F[2]}")
 
 
 def stats():
@@ -191,7 +190,7 @@ def admin_menu():
 
 def main():
     while True:
-        clear_screen()
+        
         print("\n========= LOST AND FOUND SYSTEM =========")
         print("1. Report Found Item")
         print("2. Report Lost Item")
